@@ -15,12 +15,22 @@
           <li class="hover:text-primary p-2">
             <a href="#">Home</a>
           </li>
-          <li
-            class="dropdown-nav hover:text-primary gap-2 inline-flex p-2 cursor-pointer"
-          >
-            <a href="#">Our Products</a>
-            <div class="flex items-center">
-              <div class="arrow-down"></div>
+          <li class="p-2">
+            <div class="dropdown">
+              <div
+                class="dropdown-link relative hover:text-primary cursor-pointer inline-flex gap-2"
+              >
+                <button>Our Products</button>
+                <div class="flex items-center">
+                  <button class="arrow-down"></button>
+                </div>
+              </div>
+              <div
+                class="dropdown-content invisible absolute border-2 bg-white text-secondarytext rounded-md grid grid-flow-row top-[120px] py-2"
+              >
+                <a href="#" class="px-4 py-1">Hestara Creator Web</a>
+                <a href="#" class="px-4 py-1">Hestara Creator System</a>
+              </div>
             </div>
           </li>
           <li class="hover:text-primary p-2">
@@ -43,7 +53,7 @@
   </nav>
 </template>
 
-<script></script>
+<script setup lang="ts"></script>
 
 <style>
 .arrow-down {

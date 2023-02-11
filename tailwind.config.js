@@ -170,9 +170,12 @@ module.exports = {
       pink: colors.pink,
       rose: colors.rose,
 
-      //Default text color
+      //Default UI color
       primary: "#b84ed9",
+
+      //Default text
       text: "#777777",
+      secondarytext: "#212529",
     }),
     columns: {
       auto: "auto",
