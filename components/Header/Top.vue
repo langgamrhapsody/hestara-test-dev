@@ -7,9 +7,9 @@
           class="hover:text-primary hover:underline cursor-pointer"
           >info@hestara.app</a
         >
-        <p>Mon - Fri 9:00am - 5:00pm</p>
+        <p class="invisible lg:visible">Mon - Fri 9:00am - 5:00pm</p>
       </div>
-      <div class="h-full items-center justify-center">
+      <div class="invisible lg:visible h-full items-center justify-center">
         <a
           href="tel:+6285162900414"
           class="flex items-center cursor-pointer transition ease-in-out duration-[0.4s] bg-[#4ED9B8] hover:bg-[#34c6ce] text-white font-semibold text-sm px-[32px] h-full mr-3"

@@ -10,7 +10,7 @@
           <img src="/logo.png" class="w-[150px]" alt="Hestara Logo" />
         </a>
       </div>
-      <div class="navbar-link flex gap-1 mr-5 items-center">
+      <div class="navbar-link hidden lg:flex gap-1 mr-5 items-center">
         <ul class="inline-flex text-text items-center">
           <li class="hover:text-primary p-2">
             <a href="#">Home</a>
@@ -48,6 +48,21 @@
           class="inline-block font-semibold text-white text-[15px] py-[0.4rem] px-[0.9rem] bg-gradient-to-br from-[#b84ed9] to-[#e461b9] rounded-[35px] tracking-tighter leading-6"
           >Admin Area</a
         >
+      </div>
+      <div class="burger-menu lg:hidden">
+        <button
+          class="flex justify-center items-center bg-gradient-to-br from-[#b84ed9] to-[#e461b9] hover:saturate-50 w-10 h-8 rounded-md p-[14px]"
+        >
+          <svg
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </nav>
