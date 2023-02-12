@@ -185,6 +185,7 @@ module.exports = {
       //Default text
       text: "#777777",
       secondarytext: "#212529",
+      tertiarytext: "#383f48",
     }),
     columns: {
       auto: "auto",

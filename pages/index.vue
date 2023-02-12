@@ -2,6 +2,7 @@
   <HeaderTop />
   <NavigationMain />
   <Home />
+  <Services />
 </template>
 
 <script></script>
