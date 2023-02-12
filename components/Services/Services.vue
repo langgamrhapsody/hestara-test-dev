@@ -51,7 +51,7 @@
             <p class="text-center text-text text-sm">
               Merupakan platform yang membantu User dalam memvisualisasikan
               kebutuhan dan <span>logika</span> aplikasi untuk diproses menjadi
-              <span>kode program</span>kdan API secara
+              <span>kode program</span> dan API secara
               <span>otomatis.</span>
             </p>
             <div class="flex justify-center">

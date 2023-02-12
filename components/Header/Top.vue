@@ -1,10 +1,10 @@
 <template>
   <div class="header-top w-full h-[47px] border-b items-center justify-between">
-    <div class="flex mx-[10%] items-center justify-between h-full">
+    <div class="flex mx-[10%] items-center justify-between h-[47px]">
       <div class="inline-flex text-xxs text-text tracking-tighter gap-6">
         <a
           href="mailto:hestara.app@gmail.com"
-          class="hover:text-primary hover:underline cursor-pointer"
+          class="flex items-center hover:text-primary hover:underline cursor-pointer"
           >info@hestara.app</a
         >
         <p class="invisible lg:visible">Mon - Fri 9:00am - 5:00pm</p>

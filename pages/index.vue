@@ -3,6 +3,7 @@
   <NavigationMain />
   <Home />
   <Services />
+  <Steps />
 </template>
 
 <script></script>
