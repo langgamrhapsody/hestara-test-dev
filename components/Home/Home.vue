@@ -1,5 +1,19 @@
 <template>
-  <div class="container-home mx-[10%]">
+  <div class="h-0">
+    <img
+      src="~/assets/img/home.svg"
+      alt=""
+      class="relative w-full top-[350px]"
+    />
+    <div
+      class="w-full relative h-[2050px] md:h-[1000px] lg:h[788px] top-[344px] bg-white"
+    ></div>
+    <div
+      class="hidden md:flex h-6 w-6 top-[-300px] left-[480px] relative rounded-full z-[1] bg-primary"
+    ></div>
+  </div>
+
+  <div class="container-home mx-[10%] relative">
     <div class="row-container flex flex-col md:flex-row">
       <div
         class="left-content w-full md:w-3/4 lg:w-1/2 pl-2 pr-[3%] pt-32 pb-12 lg:py-32"
@@ -27,18 +41,20 @@
         <img
           src="~/assets/img/Tablet_Pro_Mockup_10_.webp"
           alt=""
-          class="mb-[250px] md:mb-0 top-10 md:p-0 py-5 px-14"
+          class="mb-[170px] md:mb-0 top-10 md:p-0 py-5 px-14"
         />
       </div>
     </div>
-    <div class="feature-row-container flex flex-col lg:flex-row items-center">
+    <div
+      class="feature-row-container flex flex-col lg:flex-row items-center relative z-20"
+    >
       <div
-        class="left-feature lg:w-[60%] flex flex-col md:flex-row pr-0 lg:pr-12 relative lg:top-[-90px]"
+        class="left-feature lg:w-[60%] flex flex-col md:flex-row pr-0 lg:pr-12 lg:top-[-90px]"
       >
         <div class="w-full m:w-1/2 px-3 flex items-center">
           <div class="left-col-feature">
-            <div class="content-card shadow-card">
-              <div class="bg-white rounded-[10px] p-8 pt-12 mb-5">
+            <div class="content-card">
+              <div class="bg-white shadow-card rounded-[10px] p-8 pt-12 mb-5">
                 <div class="pb-5">
                   <img
                     src="~/assets/img/drag_drop.svg"
@@ -59,9 +75,9 @@
                 </div>
               </div>
             </div>
-            <div class="content-card shadow-card">
+            <div class="content-card">
               <div
-                class="bg-white rounded-[10px] shadow-sm p-8 pt-12 mb-5 md:mb-0"
+                class="bg-white shadow-card rounded-[10px] p-8 pt-12 mb-5 md:mb-0"
               >
                 <div class="pb-5">
                   <img
@@ -86,8 +102,8 @@
         </div>
         <div class="w-full m:w-1/2 px-3 flex items-center">
           <div class="right-col-feature">
-            <div class="content-card shadow-card">
-              <div class="bg-white rounded-[10px] shadow-sm p-8 pt-12">
+            <div class="content-card">
+              <div class="bg-white rounded-[10px] shadow-card p-8 pt-12">
                 <div class="pb-5">
                   <img
                     src="~/assets/img/visual.svg"
@@ -142,8 +158,26 @@
       </div>
     </div>
   </div>
+  <div class="h-0">
+    <img
+      src="~/assets/img/background1.svg"
+      alt=""
+      class="relative w-full top-[-150px] lg:top-[-100px] z-1"
+    />
+  </div>
+  <div class="h-0">
+    <img
+      src="~/assets/img/background2.svg"
+      alt=""
+      class="relative w-full lg:top-[50px] z-1"
+    />
+  </div>
 </template>
 
 <script></script>
 
-<style></style>
+<style>
+.shadow-card {
+  box-shadow: 0 0 32px -7px rgb(0 0 0 / 10%);
+}
+</style>

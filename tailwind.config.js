@@ -181,6 +181,8 @@ module.exports = {
 
       //Default UI color
       primary: "#b84ed9",
+      secondary: "#6f279c",
+      tertiary: "#e461b9",
 
       //Default text
       text: "#777777",

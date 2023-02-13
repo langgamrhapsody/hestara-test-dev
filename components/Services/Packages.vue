@@ -122,6 +122,13 @@
               </button>
             </div>
           </div>
+          <div class="h-0">
+            <img
+              src="~/assets/img/dots-group.png"
+              alt=""
+              class="relative -rotate-45 left-[-90px] top-[25px]"
+            />
+          </div>
         </div>
       </div>
       <div
