@@ -68,7 +68,15 @@
   </nav>
 </template>
 
-<script setup lang="ts"></script>
+<script lang="ts">
+export default {
+  data() {
+    return {
+      awesome: true,
+    };
+  },
+};
+</script>
 
 <style>
 .arrow-down {

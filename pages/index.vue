@@ -4,6 +4,7 @@
   <Home />
   <Services />
   <Steps />
+  <ServicesPackages />
 </template>
 
 <script></script>
