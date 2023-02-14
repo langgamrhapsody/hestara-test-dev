@@ -1,5 +1,5 @@
 <template>
-  <div class="container-packages mx-[10%] pb-20">
+  <div id="packages" class="container-packages mx-[10%] pb-20">
     <div
       class="title-packages text-center mt-32 mb-12 lg:mb-0 lg:mt-12 mx-[26%]"
     >
@@ -49,12 +49,13 @@
               </li>
             </ul>
 
-            <div class="mx-auto">
-              <button
-                class="font-semibold text-white py-4 px-16 mt-10 mb-0 md:mb-2 bg-gradient-to-r from-[#b84ed9] to-[#e461b9] rounded-[35px] tracking-tighter leading-6"
+            <div class="flex justify-center">
+              <a
+                href="hestara.app/login"
+                class="font-semibold text-white py-4 px-16 mt-10 mb-0 md:mb-2 bg-gradient-to-r from-[#b84ed9] to-[#e461b9] hover:from-[#8420a3] hover:to-[#b92f8b] rounded-[35px] tracking-tighter leading-6"
               >
                 COBA GRATIS
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -114,12 +115,13 @@
               </li>
             </ul>
 
-            <div class="mx-auto">
-              <button
-                class="font-semibold py-4 px-16 mt-10 mb-0 md:mb-2 bg-transparent border-white border-2 rounded-[35px] tracking-tighter leading-6"
+            <div class="flex justify-center">
+              <a
+                href="https://hestara.app/order?packages=62d0ab301c1646430465edb4"
+                class="font-semibold py-4 px-16 mt-10 mb-0 md:mb-2 bg-transparent hover:bg-white hover:text-secondarytext transition duration-300 border-white border-2 rounded-[35px] tracking-tighter leading-6"
               >
                 LANGGANAN
-              </button>
+              </a>
             </div>
           </div>
           <div class="h-0">
@@ -172,19 +174,20 @@
               </li>
             </ul>
 
-            <div class="mx-auto">
-              <button
-                class="font-semibold text-white py-4 px-16 mt-10 mb-0 md:mb-2 bg-gradient-to-r from-[#b84ed9] to-[#e461b9] rounded-[35px] tracking-tighter leading-6"
+            <div class="flex justify-center">
+              <a
+                href="https://hestara.app/order?packages=62d0ab361c1646430465edb5"
+                class="font-semibold text-white py-4 px-16 mt-10 mb-0 md:mb-2 bg-gradient-to-r from-[#b84ed9] to-[#e461b9] hover:from-[#8420a3] hover:to-[#b92f8b] rounded-[35px] tracking-tighter leading-6"
               >
                 LANGGANAN
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="container-pricing bg-white border-t-4 border-primary text-text rounded-[10px] py-8 px-12 mt-28 shadow-lg"
+      class="container-pricing bg-white border-t-4 border-primary text-text rounded-[10px] py-8 px-12 mt-28 shadow-lg relative z-50"
     >
       <div
         class="flex flex-col lg:flex-row gap-8 lg:gap-0 text-center items-center justify-between"
@@ -194,11 +197,12 @@
           halaman <span>Pricing</span> Kami!
         </p>
 
-        <button
-          class="font-semibold text-white py-4 px-14 bg-gradient-to-r from-[#b84ed9] to-[#e461b9] rounded-[35px] tracking-tighter leading-6"
+        <a
+          href="https://hestara.app/pricing"
+          class="font-semibold text-white py-4 px-14 bg-gradient-to-r from-[#b84ed9] to-[#e461b9] hover:from-[#8420a3] hover:to-[#b92f8b] rounded-[35px] tracking-tighter leading-6"
         >
           Pricing Plan
-        </button>
+        </a>
       </div>
     </div>
   </div>

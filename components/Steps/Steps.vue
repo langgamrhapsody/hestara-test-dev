@@ -103,8 +103,9 @@
                 class="mx-[8%] md:mx-0 items-center text-center text-text text-sm mt-4"
               >
                 Registrasimu sudah berhasil. Sekarang kamu bisa merealisasikan
-                aplikasimu dengan memanfaatkan layanan Creator Web dan Creator
-                System Hestara
+                aplikasimu dengan memanfaatkan layanan
+                <span class="text-primary">Creator Web</span> dan
+                <span class="text-primary">Creator System</span> Hestara
               </p>
             </div>
           </div>

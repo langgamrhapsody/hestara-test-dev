@@ -13,7 +13,7 @@
     ></div>
   </div>
 
-  <div class="container-home mx-[10%] relative">
+  <div class="container-home mx-[10%] relative z-[1]">
     <div class="row-container flex flex-col md:flex-row">
       <div
         class="left-content w-full md:w-3/4 lg:w-1/2 pl-2 pr-[3%] pt-32 pb-12 lg:py-32"
@@ -29,11 +29,12 @@
           aplikasi tanpa code program dengan performa yang baik dan stabil.
           Penasaran?
         </p>
-        <button
-          class="font-semibold text-white text-sm py-4 px-12 bg-gradient-to-r from-[#b84ed9] to-[#e461b9] rounded-[35px] tracking-tighter leading-6"
+        <a
+          href="#service"
+          class="font-semibold text-white text-sm py-4 px-12 bg-gradient-to-r from-[#b84ed9] to-[#e461b9] hover:from-[#8420a3] hover:to-[#b92f8b] rounded-[35px] tracking-tighter leading-6"
         >
           Pelajari Lebih Lanjut
-        </button>
+        </a>
       </div>
       <div
         class="right-content md:w-3/4 lg:w-1/2 md:py-32 md:mb-12 lg:mb-0 lg:pb-0"
@@ -149,11 +150,12 @@
             yang ingin mengembangkan bisnis digital agar menjadi sebuah aplikasi
             bisnis profesional.
           </p>
-          <button
-            class="font-semibold text-white text-sm py-3 px-11 bg-gradient-to-r from-[#b84ed9] to-[#e461b9] rounded-[35px] leading-6"
+          <a
+            href="#packages"
+            class="font-semibold text-white text-sm py-3 px-11 bg-gradient-to-r from-[#b84ed9] to-[#e461b9] hover:from-[#8420a3] hover:to-[#b92f8b] rounded-[35px] leading-6"
           >
             Pilih Layanan
-          </button>
+          </a>
         </div>
       </div>
     </div>

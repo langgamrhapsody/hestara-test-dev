@@ -15,13 +15,15 @@
         <h1 class="text-lg uppercase font-bold mb-4">Link Penting</h1>
         <ul class="text-xs leading-6">
           <li>
-            <a href="#">Hestara Creator Web</a>
+            <a href="https://hestara.app/creator-web">Hestara Creator Web</a>
           </li>
           <li>
-            <a href="#">Hestara Creator System</a>
+            <a href="https://hestara.app/creator-system"
+              >Hestara Creator System</a
+            >
           </li>
           <li>
-            <a href="#">Pricing Plan</a>
+            <a href="https://hestara.app/pricing">Pricing Plan</a>
           </li>
         </ul>
       </div>

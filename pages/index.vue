@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#eff1f3]">
+  <div class="App">
     <HeaderTop />
     <NavigationMain />
     <Home />

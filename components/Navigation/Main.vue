@@ -1,6 +1,10 @@
 <template>
-  <nav
-    class="navbar flex w-full min-h-[100px] py-2 border-b items-center justify-between"
+  <div
+    :class="{
+      '': isMobileNavCollapse,
+      'border-b': !isMobileNavCollapse,
+    }"
+    class="navbar flex h-[100px] w-full py-2 items-center justify-between"
   >
     <div
       class="container h-full inline-flex justify-between items-center mx-[10%]"
@@ -10,46 +14,7 @@
           <img src="/logo.png" class="w-[150px]" alt="Hestara Logo" />
         </a>
       </div>
-      <div class="navbar-link hidden lg:flex gap-1 mr-5 items-center">
-        <ul class="inline-flex text-text items-center">
-          <li class="hover:text-primary p-2">
-            <a href="#">Home</a>
-          </li>
-          <li class="p-2">
-            <div class="dropdown">
-              <div
-                class="dropdown-link relative hover:text-primary cursor-pointer inline-flex gap-2"
-              >
-                <button>Our Products</button>
-                <div class="flex items-center">
-                  <button class="arrow-down"></button>
-                </div>
-              </div>
-              <div
-                class="dropdown-content invisible absolute border-2 bg-white text-secondarytext rounded-md grid grid-flow-row top-[120px] py-2"
-              >
-                <a href="#" class="px-4 py-1">Hestara Creator Web</a>
-                <a href="#" class="px-4 py-1">Hestara Creator System</a>
-              </div>
-            </div>
-          </li>
-          <li class="hover:text-primary p-2">
-            <a href="#">Pricing Plan</a>
-          </li>
-          <li class="hover:text-primary p-2">
-            <a href="#">Case Studies</a>
-          </li>
-          <li class="hover:text-primary p-2">
-            <a href="#">Careers</a>
-          </li>
-        </ul>
-        <a
-          href="#"
-          class="inline-block font-semibold text-white text-[15px] py-[0.4rem] px-[0.9rem] bg-gradient-to-br from-[#b84ed9] to-[#e461b9] rounded-[35px] tracking-tighter leading-6"
-          >Admin Area</a
-        >
-      </div>
-      <div class="burger-menu lg:hidden">
+      <div @click="checkMobileNav()" class="burger-menu lg:hidden">
         <button
           class="flex justify-center items-center bg-gradient-to-br from-[#b84ed9] to-[#e461b9] hover:saturate-50 w-10 h-8 rounded-md p-[14px]"
         >
@@ -64,18 +29,122 @@
           </svg>
         </button>
       </div>
+      <div class="navbar-link hidden lg:flex gap-1 mr-5 items-center">
+        <ul class="inline-flex text-text items-center">
+          <li class="hover:text-primary p-2">
+            <a href="#">Home</a>
+          </li>
+          <li class="p-2">
+            <div class="dropdown">
+              <div
+                @click="checkDropdown()"
+                class="dropdown-link relative hover:text-primary cursor-pointer inline-flex gap-2"
+              >
+                <button>Our Products</button>
+                <div class="flex items-center">
+                  <button class="arrow-down"></button>
+                </div>
+              </div>
+              <div
+                :class="{
+                  'dropdown-animate-show translate-y-[0]': isDropdown,
+                  'dropdown-animate-hide translate-y-[-10px]': !isDropdown,
+                }"
+                class="dropdown-content absolute border-2 bg-white text-secondarytext rounded-md grid grid-flow-row top-[120px] py-2 transition-all duration-[0.2s] ease-in-out z-[100]"
+              >
+                <a href="https://hestara.app/creator-web" class="px-4 py-1"
+                  >Hestara Creator Web</a
+                >
+                <a href="https://hestara.app/creator-system" class="px-4 py-1"
+                  >Hestara Creator System</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="hover:text-primary p-2">
+            <a href="https://hestara.app/pricing">Pricing Plan</a>
+          </li>
+          <li class="hover:text-primary p-2">
+            <a href="https://hestara.app/coming-soon">Case Studies</a>
+          </li>
+          <li class="hover:text-primary p-2">
+            <a href="https://hestaraapp.freshteam.com/jobs">Careers</a>
+          </li>
+        </ul>
+        <a
+          href="https://hestera.app/login"
+          class="inline-block font-semibold text-white text-[15px] py-[0.4rem] px-[0.9rem] bg-gradient-to-br from-[#b84ed9] to-[#e461b9] hover:from-[#8420a3] hover:to-[#b92f8b] rounded-[35px] tracking-tighter leading-6"
+          >Admin Area</a
+        >
+      </div>
     </div>
-  </nav>
+  </div>
+  <div
+    v-if="isMobileNavCollapse"
+    class="mobile-nav bg-[#eff1f3] text-text absolute w-full border-b pb-4 px-[10%] z-50"
+  >
+    <ul>
+      <li class="hover:text-primary p-2">
+        <a href="#">Home</a>
+      </li>
+      <li class="p-2">
+        <div class="dropdown">
+          <div
+            @click="checkDropdown()"
+            class="dropdown-link relative hover:text-primary cursor-pointer inline-flex gap-2"
+          >
+            <button>Our Products</button>
+            <div class="flex items-center">
+              <button class="arrow-down"></button>
+            </div>
+          </div>
+          <div
+            v-if="isDropdown"
+            class="dropdown-content text-text rounded-md grid grid-flow-row transition-all duration-[0.4s] ease-in-out"
+          >
+            <a
+              href="https://hestara.app/creator-web"
+              class="px-4 py-1 hover:text-primary"
+              >Hestara Creator Web</a
+            >
+            <a
+              href="https://hestara.app/creator-system"
+              class="px-4 py-1 hover:text-primary"
+              >Hestara Creator System</a
+            >
+          </div>
+        </div>
+      </li>
+      <li class="hover:text-primary p-2">
+        <a href="https://hestara.app/pricing">Pricing Plan</a>
+      </li>
+      <li class="hover:text-primary p-2">
+        <a href="https://hestara.app/coming-soon">Case Studies</a>
+      </li>
+      <li class="hover:text-primary p-2">
+        <a href="https://hestaraapp.freshteam.com/jobs">Careers</a>
+      </li>
+    </ul>
+    <a
+      href="hestera.app/admin"
+      class="inline-block font-semibold text-white text-[15px] py-[0.4rem] px-[0.9rem] bg-gradient-to-br from-[#b84ed9] to-[#e461b9] hover:from-[#8420a3] hover:to-[#b92f8b] rounded-[35px] tracking-tighter leading-6"
+      >Admin Area</a
+    >
+  </div>
 </template>
 
-<script lang="ts">
-export default {
-  data() {
-    return {
-      awesome: true,
-    };
-  },
-};
+<script setup lang="ts">
+const isDropdown = ref(false);
+function checkDropdown() {
+  isDropdown.value = !isDropdown.value;
+  console.log("dropdown", isDropdown.value);
+}
+
+const isMobileNavCollapse = ref(false);
+function checkMobileNav() {
+  isMobileNavCollapse.value = !isMobileNavCollapse.value;
+  console.log("checkmobile", isMobileNavCollapse.value);
+}
 </script>
 
 <style>
@@ -86,5 +155,15 @@ export default {
   border-right: 5px solid transparent;
 
   border-top: 5px solid;
+}
+
+.dropdown-animate-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-animate-hide {
+  opacity: 0;
+  visibility: hidden;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="h-0">
+  <div id="service" class="h-0">
     <div
       class="left-[60%] top-[150px] lg:top-[200px] h-6 w-6 relative rounded-full z-[1] bg-gray-500"
     ></div>
@@ -60,12 +60,13 @@
                 tampilan website secara
                 <span> otomatis. </span>
               </p>
-              <div class="mx-auto">
-                <button
-                  class="font-semibold text-white text-sm py-4 px-16 mt-10 mb-0 md:mb-[24px] bg-gradient-to-r from-[#b84ed9] to-[#e461b9] rounded-[35px] tracking-tighter leading-6"
+              <div class="flex justify-center">
+                <a
+                  href="https://hestara.app/creator-web"
+                  class="font-semibold text-white text-sm py-4 px-16 mt-10 mb-0 md:mb-[24px] bg-gradient-to-r from-[#b84ed9] to-[#e461b9] hover:from-[#8420a3] hover:to-[#b92f8b] rounded-[35px] tracking-tighter leading-6"
                 >
                   Pelajari Lebih Lanjut
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -85,11 +86,12 @@
                 <span>otomatis.</span>
               </p>
               <div class="flex justify-center">
-                <button
-                  class="font-semibold text-white text-sm py-4 px-16 mt-10 mb-[24px] bg-gradient-to-r from-[#b84ed9] to-[#e461b9] rounded-[35px] tracking-tighter leading-6"
+                <a
+                  href="https://hestara.app/creator-system"
+                  class="font-semibold text-white text-sm py-4 px-16 mt-10 mb-[24px] bg-gradient-to-r from-[#b84ed9] to-[#e461b9] hover:from-[#8420a3] hover:to-[#b92f8b] rounded-[35px] tracking-tighter leading-6"
                 >
                   Pelajari Lebih Lanjut
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -108,11 +110,12 @@
                 aplikasi yang akan dibangun.
               </p>
               <div class="flex justify-center">
-                <button
-                  class="font-semibold text-white text-sm py-4 px-16 mt-10 mb-[24px] bg-gradient-to-r from-[#b84ed9] to-[#e461b9] rounded-[35px] tracking-tighter leading-6"
+                <a
+                  href="tel:+6285162900414"
+                  class="font-semibold text-white text-sm py-4 px-16 mt-10 mb-[24px] bg-gradient-to-r from-[#b84ed9] to-[#e461b9] hover:from-[#8420a3] hover:to-[#b92f8b] rounded-[35px] tracking-tighter leading-6"
                 >
                   Hubungi Kami
-                </button>
+                </a>
               </div>
             </div>
           </div>
