@@ -6,6 +6,14 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
+      script: [
+        {
+          hid: "stripe",
+          src: "//js-na1.hs-scripts.com/24036900.js",
+          defer: true,
+        },
+      ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
   css: ["~/assets/css/main.css"],
